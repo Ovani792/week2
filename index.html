@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card</title>
+    <img src=images/profile.jpeg alt="Profile Image" style="display:none;">
+    <style>
+        :root{
+            --bg:#0a0e1a;
+            --card-bg:#0c1120;
+            --c1:#22d3a8;
+            --c2:#3b82f6;
+            --c3:#8b5cf6;
+            --text-main:#f5f7fb;
+            --text-sub:#5eead4;
+            --text-body:#93a0bd;
+            --divider:#1f2937;
+        }
+        *{box-sizing:border-box;}
+        html,body{
+            height:100%;
+        }
+        body{
+            margin:0;
+            min-height:100vh;
+            background:var(--bg);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-family:'segoe ui',system-ui, -apple-system,sans-serif;
+            overflow:hidden;
+            position:relative;
+            padding:24px;
+        }
+        .deco-arc{
+    position:absolute;
+    border-radius:50%;
+    border:1.5px solid;
+    opacity:0.45;
+    pointer-events:none;
+  }
+  .arc1{width:420px;height:420px;top:-230px;left:-230px;border-color:var(--c2);}
+  .arc2{width:280px;height:280px;top:-150px;left:-110px;border-color:var(--c1);}
+  .arc3{width:480px;height:480px;bottom:-250px;right:-250px;border-color:var(--c3);}
+  .deco-dot{position:absolute;border-radius:50%;background:#1e293b;pointer-events:none;}
+  .dot1{width:24px;height:24px;top:9%;left:26%;}
+  .dot2{width:32px;height:32px;bottom:11%;right:20%;}
+
+  .card-wrap{
+    position:relative;
+    padding:2px;
+    border-radius:28px;
+    background:linear-gradient(155deg, var(--c1), var(--c2) 50%, var(--c3));
+    box-shadow:0 0 70px -12px rgba(59,130,246,0.4);
+    max-width:400px;
+    width:100%;
+  }
+  .card{
+    background:var(--card-bg);
+    border-radius:26px;
+    padding:44px 32px 32px;
+    text-align:center;
+  }
+.avatar-ring {
+    width: 170px;
+    height: 170px;
+    padding: 5px;
+    margin: 0 auto 28px;
+    border-radius: 50%;
+    background: conic-gradient(
+        from 210deg,
+        var(--c1),
+        var(--c2),
+        var(--c3),
+        var(--c1)
+    );
+    box-shadow: 0 0 40px -6px rgba(59,130,246,0.55);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.avatar-image {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: center 48%;
+    display: block;
+    border-radius: 50%;
+}
+
+  h1{
+    color:var(--text-main);
+    font-size:2rem;
+    margin:0 0 10px;
+    font-weight:700;
+    letter-spacing:-0.01em;
+  }
+  .role{
+    color:var(--text-sub);
+    letter-spacing:2.5px;
+    font-size:0.78rem;
+    font-weight:600;
+    margin:0 0 26px;
+  }
+  .bio{
+    color:var(--text-body);
+    font-size:0.98rem;
+    line-height:1.75;
+    margin:0 0 26px;
+  }
+  hr{border:none;border-top:1px solid var(--divider);margin:0 0 22px;}
+  .links{display:flex;gap:12px;justify-content:center;}
+  .link-btn{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:9px;
+    padding:16px 6px;
+    border-radius:16px;
+    text-decoration:none;
+    font-size:0.82rem;
+    font-weight:600;
+    border:1px solid;
+    transition:transform 0.15s ease;
+  }
+  .link-btn:hover{transform:translateY(-3px);}
+  .gh{background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.14);color:#e2e8f0;}
+  .li{background:rgba(59,130,246,0.09);border-color:rgba(59,130,246,0.4);color:#bfdbfe;}
+  .x{background:rgba(139,92,246,0.09);border-color:rgba(139,92,246,0.4);color:#ddd6fe;}
+
+  @media (max-width:380px){
+    .card{padding:36px 20px 26px;}
+    h1{font-size:1.7rem;}
+  }
+    </style>
+
+    
+</head>
+<body>
+    <div class="deco-arc arc1"></div>
+    <div class="deco-arc arc2"></div>
+    <div class="deco-arc arc3"></div>
+    <div class="deco-dot dot1"></div>
+    <div class="deco-dot dot2"></div>
+    <div class="card-wrap">
+        <div class="card">
+            <div class="avatar-ring">
+                <div class="avatar">
+                    <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#3a4a63"/>
+                <stop offset="100%" stop-color="#0e1522"/>
+              </linearGradient>
+            </defs>
+            <rect width="200" height="200" fill="url(#sky)"/>
+            <polygon points="0,200 30,110 55,150 90,70 120,130 150,90 200,140 200,200" fill="#2b3a52"/>
+            <polygon points="40,200 70,140 100,170 140,110 180,160 200,150 200,200" fill="#212e44"/>
+            <circle cx="100" cy="92" r="33" fill="#0b1120"/>
+            <path d="M70 84c2-20 15-30 30-30s27 9 30 28c2 1 3 4 2 7l-4 8c1-14-4-24-14-28 2 6 1 13-3 18l-4-3c5-9 3-19-6-24-9-4-18 0-21 9-2 6-1 12 2 17l-4 3c-4-6-6-14-4-21-6 3-9 10-8 17z" fill="#0b1120"/>
+            <path d="M35 200c4-45 32-64 65-64s61 19 65 64z" fill="#0b1120"/>
+          </svg>
+        </div>
+      </div>
+      <h1>Javan Omondi</h1>
+      <p class="role">STUDENT &nbsp;•&nbsp; DEVELOPER &nbsp;•&nbsp; DREAMER</p>
+      <p class="bio">
+        Building cool things with code.<br>
+        Always learning, always fighting.<br>
+        Big dreams, small steps.
+      </p>
+      <hr>
+      <div class="links">
+        <a href="#" class="link-btn gh">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+          GitHub
+        </a>
+        <a href="#" class="link-btn li">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          LinkedIn
+        </a>
+        <a href="#" class="link-btn x">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.5 21H2.42l7.17-8.2L2 3h6.33l4.37 5.78L17.75 3zm-1.08 16.17h1.7L7.4 4.73H5.58l11.09 14.44z"/></svg>
+          X (Twitter)
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  const avatarBox = document.querySelector('.avatar');
+  const avatarSvg = document.querySelector('.avatar svg');
+
+  const img = new Image();
+  img.className = 'avatar-image';
+  img.alt = 'Profile picture';
+
+  img.onload = () => {
+    avatarSvg.replaceWith(img);
+  };
+
+  img.onerror = () => {
+    console.warn('Profile image failed to load — check the path/filename.');
+  };
+
+  img.src = 'images/profile.jpeg';
+</script>
