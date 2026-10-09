@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jav Plan — Settings</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M6 5c0 4 3 6 6 7-3 1-6 3-6 7M18 5c0 4-3 6-6 7 3 1 6 3 6 7"/></svg>
+        Jav Plan
+    </div>
+
+    <div class="nav-group">
+      <a class="nav-item" href="index.html">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        Dashboard
+      </a>
+      <a class="nav-item" href="task.html">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12l2.5 2.5L16 9"/></svg>
+        My tasks
+      </a>
+      
+      <a class="nav-item" href="projects.html">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        Projects
+      </a>
+      
+
+    <div class="sidebar-footer">
+      <div class="nav-section">
+        <a class="nav-item active" href="settings.html">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>
+          Settings
+        </a>
+        
+      </div>
+      <div class="profile-pill">
+        <div class="avatar">JO</div>
+        <div class="who">
+          <span class="name">Javan Omondi</span>
+          <span class="email">javan.omondi@gmail.com</span>
+        </div>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <h1>Settings</h1>
+      <div class="topbar-actions">
+        <button class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+
+    <div style="max-width:640px;">
+      <div class="form-section">
+        <h2>Profile</h2>
+        <p class="hint">This is how your name and photo appear across ONBO.</p>
+        <div class="form-row">
+          <div class="field"><label>First name</label><input type="text" value="Anna"></div>
+          <div class="field"><label>Last name</label><input type="text" value="James"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Email</label><input type="email" value="anna.james@gmail.com"></div>
+          <div class="field"><label>Role</label><input type="text" value="Product Designer"></div>
+        </div>
+        <div class="field">
+          <label>Time zone</label>
+          <select>
+            <option>Africa/Nairobi (GMT+3)</option>
+            <option>UTC</option>
+            <option>America/New_York (GMT-4)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Notifications</h2>
+        <p class="hint">Choose what you get notified about.</p>
+        <div class="toggle-row">
+          <div><div class="t-label">Task assigned to me</div><div class="t-desc">Get notified when someone assigns you a task</div></div>
+          <div class="switch on"></div>
+        </div>
+        <div class="toggle-row">
+          <div><div class="t-label">Comments &amp; mentions</div><div class="t-desc">Notify me when someone mentions me in a comment</div></div>
+          <div class="switch on"></div>
+        </div>
+        <div class="toggle-row">
+          <div><div class="t-label">Due date reminders</div><div class="t-desc">Send a reminder the day before a task is due</div></div>
+          <div class="switch"></div>
+        </div>
+        <div class="toggle-row">
+          <div><div class="t-label">Weekly summary email</div><div class="t-desc">A digest of activity across your projects</div></div>
+          <div class="switch on"></div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Preferences</h2>
+        <p class="hint">Personalize how ONBO looks and behaves.</p>
+        <div class="form-row">
+          <div class="field">
+            <label>Theme</label>
+            <select><option>Dark</option><option>Light</option><option>System</option></select>
+          </div>
+          <div class="field">
+            <label>Default view</label>
+            <select><option>Overview</option><option>Board</option><option>List</option><option>Timeline</option></select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

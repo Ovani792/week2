@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jav Plan — My Tasks</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M6 5c0 4 3 6 6 7-3 1-6 3-6 7M18 5c0 4-3 6-6 7 3 1 6 3 6 7"/></svg>
+      Jav Plan
+    </div>
+
+    <div class="nav-group">
+      <a class="nav-item" href="index.html">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        Dashboard
+      </a>
+      <a class="nav-item active" href="task.html">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12l2.5 2.5L16 9"/></svg>
+        My tasks
+      </a>
+      <a class="nav-item" href="projects.html">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        Projects
+      </a>
+    </div><!-- /nav-group -->
+
+    <div class="sidebar-footer">
+      <div class="nav-section">
+        <a class="nav-item" href="settings.html">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>
+          Settings
+        </a>
+      </div>
+      <div class="profile-pill">
+        <div class="avatar">JO</div>
+        <div class="who">
+          <span class="name">Javan Omondi</span>
+          <span class="email">javan.omondi@gmail.com</span>
+        </div>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <h1>My Tasks</h1>
+      <div class="topbar-actions">
+        <div class="search-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          Search
+        </div>
+        <button class="btn btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          Add task
+        </button>
+      </div><!-- /topbar-actions -->
+    </div><!-- /topbar -->
+
+    <div class="tabs">
+      <div class="tab">List</div>
+      <div class="tab active">Board</div>
+      <div class="tab">Timeline</div>
+    </div>
+
+    <div class="board">
+      <div class="board-col">
+        <div class="board-col-head">To do <span class="board-count">3</span></div>
+        <div class="task-card">
+          <a class="tc-title" href="#">Draft Q1 content calendar</a>
+          <span class="tc-tag" style="background:var(--purple-bg); color:var(--purple);">Marketing</span>
+          <div class="tc-foot"><span>Sofia W.</span><span>02/02</span></div>
+        </div>
+        <div class="task-card">
+          <a class="tc-title" href="#">Set up staging environment</a>
+          <span class="tc-tag" style="background:var(--orange-bg); color:var(--orange);">Engineering</span>
+          <div class="tc-foot"><span>Mark M.</span><span>04/02</span></div>
+        </div>
+        <div class="task-card">
+          <a class="tc-title" href="#">Interview 3 users on onboarding</a>
+          <span class="tc-tag" style="background:var(--green-bg); color:var(--green);">Research</span>
+          <div class="tc-foot"><span>Anna K.</span><span>05/02</span></div>
+        </div>
+      </div>
+
+      <div class="board-col">
+        <div class="board-col-head">In progress <span class="board-count">2</span></div>
+        <div class="task-card">
+          <a class="tc-title" href="#">Redesign analytics dashboard</a>
+          <span class="tc-tag" style="background:var(--purple-bg); color:var(--purple);">Design</span>
+          <div class="tc-foot"><span>Anna K. +1</span><span>11/01</span></div>
+        </div>
+        <div class="task-card">
+          <a class="tc-title" href="#">Create marketing landing page</a>
+          <span class="tc-tag" style="background:var(--purple-bg); color:var(--purple);">Marketing</span>
+          <div class="tc-foot"><span>Anna K.</span><span>28/01</span></div>
+        </div>
+      </div>
+
+      <div class="board-col">
+        <div class="board-col-head">In review <span class="board-count">1</span></div>
+        <div class="task-card">
+          <a class="tc-title" href="#">Review user feedback &amp; insights</a>
+          <span class="tc-tag" style="background:var(--orange-bg); color:var(--orange);">Product</span>
+          <div class="tc-foot"><span>Mark M. +2</span><span>22/01</span></div>
+        </div>
+      </div>
+
+      <div class="board-col">
+        <div class="board-col-head">Done <span class="board-count">2</span></div>
+        <div class="task-card">
+          <a class="tc-title" href="#">Prepare onboarding flow</a>
+          <span class="tc-tag" style="background:var(--green-bg); color:var(--green);">Product</span>
+          <div class="tc-foot"><span>Benjamin S.</span><span>08/01</span></div>
+        </div>
+        <div class="task-card">
+          <a class="tc-title" href="#">Update design system components</a>
+          <span class="tc-tag" style="background:var(--green-bg); color:var(--green);">Design</span>
+          <div class="tc-foot"><span>Sofia W.</span><span>08/01</span></div>
+        </div>
+      </div>
+    </div><!-- /board -->
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
